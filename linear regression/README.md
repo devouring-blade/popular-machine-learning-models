@@ -1,12 +1,12 @@
-estimation
+# estimation
 We assume the dependent variable y varies linearly with the independent variable x. The goal is to find a straight line that fits the data well. 
 <img width="961" height="389" alt="img" src="https://github.com/user-attachments/assets/90046e91-af17-45d9-bdb1-52479f4f0d03" />
 
-calculating loss
+# calculating loss
 To calculate the model's loss, we use the mean squared error (MSE) function to compute the average of the squared differences between the model's predictions and the actual values of the data.
 <img width="952" height="379" alt="img_1" src="https://github.com/user-attachments/assets/5d5812b9-a50e-4674-a3c9-f9cfa995c933" />
 
-update parameters
+# update parameters
 we take the derivative of the model's loss function to find the direction in which the loss decreases.
 <img width="973" height="385" alt="img_2" src="https://github.com/user-attachments/assets/b370b6d0-2d8b-4b24-9d06-3756c37019a5" />
 
