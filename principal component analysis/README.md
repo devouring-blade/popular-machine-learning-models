@@ -1,4 +1,4 @@
-
+# Mathematical foundation
 ## Objective
 
 Find a new axis 𝑣 (unit vector) so that when projecting data 𝑥𝑖 onto it, the variance of the projected data is maximized.
