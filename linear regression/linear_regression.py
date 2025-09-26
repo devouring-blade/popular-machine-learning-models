@@ -1,6 +1,6 @@
 import numpy as np
 
-class Linear_regression:
+class Linear_Regression:
     def __init__(self, lr= 0.01, n_iters= 1000):
         self.lr = lr
         self.n_iters = n_iters
