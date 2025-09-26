@@ -8,7 +8,7 @@ class KNN_Classification:
 
     def fit(self, x_train, y_train):
         self.x_train = x_train
-        self.y_train = y_train
+        self.y_train = y_train.to_numpy()
 
     def predict(self, x_test):
         def euclidean_distance(x, y):
@@ -37,7 +37,7 @@ class KNN_Regression:
 
     def fit(self, x_train, y_train):
         self.x_train = x_train
-        self.y_train = y_train
+        self.y_train = y_train.to_numpy()
 
     def predict(self, x_test):
         def euclidean_distance(x, y):
