@@ -6,8 +6,15 @@ we pass the model’s output through a sigmoid function to map them to probabili
 
 # calculating loss
 To calculate the loss for the model, we don’t use MSE like in linear regression, because the output values represent probabilities indicating the confidence that a data point belongs to certain class. Therefore, in this case, we use the cross-entropy loss formula.
-At the same time, we also take the derivative of this loss function to determine the direction in which we should adjust the parameters to reduce the loss.
-<img width="959" height="278" alt="{5F160029-1902-4ABE-A0EA-29164601125D}" src="https://github.com/user-attachments/assets/6481a009-7d98-4e48-af36-ef9654c45867" />
+<img width="748" height="105" alt="{827935FB-0DC9-4E6B-97E3-A59B79B675A1}" src="https://github.com/user-attachments/assets/2f1c49ef-2471-44fb-9006-2f651c3e32db" />
+Note that this formula is specifically for binary classification. If there are more than two classes, a slightly different formula is used.
+
+# update parameters
+We will still compute the derivative of the loss function to find the direction in which the loss decreases, in order to optimize the model.
+<img width="902" height="130" alt="{4B597363-3BA7-43E6-9BFB-074B419A3F04}" src="https://github.com/user-attachments/assets/4b36dfc8-bf0b-4845-a488-0476187ca9b6" />
+
+Then, we use gradient descent to update the weights and biases.
+<img width="970" height="341" alt="{25A0E669-8814-4862-B660-FCB078DB7447}" src="https://github.com/user-attachments/assets/2994a508-c51a-48ad-b6be-e6c24ff3087a" />
 
 
 
