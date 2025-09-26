@@ -52,4 +52,4 @@ Choose k eigenvectors with largest λ → Vk
 
 Project data: Z = X.Vk
 
-#
+
