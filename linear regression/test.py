@@ -7,8 +7,8 @@ from linear_regression import Linear_regression
 
 
 if __name__ == '__main__':
-    data = fetch_california_housing(as_frame= True)
-    x, y = data.data, data.target
+    fetch_housing = fetch_california_housing(as_frame= True)
+    x, y = fetch_housing.data, fetch_housing.target
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size= 0.2, random_state= 0, shuffle= True)
 
     scaler = StandardScaler()
