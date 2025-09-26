@@ -7,6 +7,7 @@ we pass the model’s output through a sigmoid function to map them to probabili
 # calculating loss
 To calculate the loss for the model, we don’t use MSE like in linear regression, because the output values represent probabilities indicating the confidence that a data point belongs to certain class. Therefore, in this case, we use the cross-entropy loss formula.
 <img width="748" height="105" alt="{827935FB-0DC9-4E6B-97E3-A59B79B675A1}" src="https://github.com/user-attachments/assets/2f1c49ef-2471-44fb-9006-2f651c3e32db" />
+
 Note that this formula is specifically for binary classification. If there are more than two classes, a slightly different formula is used.
 
 # update parameters
