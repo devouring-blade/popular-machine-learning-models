@@ -4,7 +4,7 @@ def sigmoid(linear_predict):
     return 1 / (1 + np.exp(-linear_predict))
 
 
-class Logistic_regression:
+class Logistic_Regression:
 
     def __init__(self, lr= 0.001, n_iters= 1000, threshold= 0.5):
         self.lr = lr
