@@ -1,9 +1,8 @@
 from sklearn.datasets import load_iris, load_diabetes
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from knn import KNN_Classification
+from knn import KNN_Classification, KNN_Regression
 from sklearn.metrics import classification_report, r2_score, mean_squared_error, mean_absolute_error
-from sklearn.tree import DecisionTreeRegressor
 
 
 def test_classification():
@@ -34,7 +33,7 @@ def test_regression():
     x_train = scaler.transform(x_train)
     x_test = scaler.transform(x_test)
 
-    model = DecisionTreeRegressor()
+    model = KNN_Regression()
     model.fit(x_train, y_train)
     y_predict = model.predict(x_test)
 
@@ -55,6 +54,6 @@ if __name__ == '__main__':
 # weighted avg       0.97      0.97      0.97        30
 
     test_regression()
-# MAE:  66.0
-# MSE:  8053.4157303370785
-# R2:   -0.5705012345417619
+# MAE:  51.36704119850187
+# MSE:  4489.419475655432
+# R2:   0.12451572537935074
