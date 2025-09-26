@@ -17,5 +17,7 @@ We will still compute the derivative of the loss function to find the direction 
 Then, we use gradient descent to update the weights and biases.
 <img width="970" height="341" alt="{25A0E669-8814-4862-B660-FCB078DB7447}" src="https://github.com/user-attachments/assets/2994a508-c51a-48ad-b6be-e6c24ff3087a" />
 
+# steps
+We still follow the same steps as in linear regression, except that we use a different formula. The conditions and procedure remain the same, because, as mentioned, logistic regression is based on linear regression.
 
 
