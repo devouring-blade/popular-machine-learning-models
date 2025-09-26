@@ -19,3 +19,5 @@ First, when initializing the model, we create the weights and biases as zeros. O
 
 each time we fit the data through the model, we calculate the loss, which gives us the derivatives. Then, we update the weights and biases using gradient descent.
 <img width="948" height="336" alt="{CC9AD473-3EB6-43D0-8EBE-1513E552E13A}" src="https://github.com/user-attachments/assets/601ce203-3adc-49a6-a168-66276dd53bef" />
+
+The process ends when the model’s loss no longer decreases, or when the number of iterations (n_iters) reaches the allowed limit.
