@@ -17,7 +17,9 @@ P(X), we can omit it, as we only need to select the class with the highest numer
 We calculate the prior probability of each class, then compute the probability of each feature given the class we are considering (the prior) by converting it into the Gaussian Naive Bayes formula, assuming that the distribution of that feature follows a normal distribution.
 <img width="930" height="411" alt="{B5A5CBC0-F437-479C-8BD8-185E32E121CA}" src="https://github.com/user-attachments/assets/5e6b1867-9b58-4a9f-ba24-382911467b59" />
 
-
+# steps
+## During training, we calculate the mean, variance, and prior for each class.
+## During prediction, we apply the formulas above to compute the posterior probability of a sample for each class. The class with the highest posterior probability is assigned as the label of that sample.
 
 
 
