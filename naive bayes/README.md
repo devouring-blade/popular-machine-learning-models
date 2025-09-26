@@ -11,7 +11,7 @@ It chooses the class with the highest posterior probability.
 <img width="887" height="355" alt="{D2BC9BA0-6A88-4EFA-BCF9-41E43992894E}" src="https://github.com/user-attachments/assets/50131536-7e5a-4f04-8dda-1dedc7b47c92" />
 
 We will consider the posterior probability of a sample based on all the available data (inputs). Since all posterior probabilities are divided by 
-P(X), we can omit it, as we only need to select the class with the highest numer. However, the probability values can be very small, and multiplying them may make the posterior probability extremely tiny, causing the computer to round the result to 0. Therefore, we apply the logarithm function, which not only addresses the issue of very small values but also allows us to convert the product into a sum for easier computation.ator.
+P(X), we can omit it, as we only need to select the class with the highest numerator. However, the probability values can be very small, and multiplying them may make the posterior probability extremely tiny, causing the computer to round the result to 0. Therefore, we apply the logarithm function, which not only addresses the issue of very small values but also allows us to convert the product into a sum for easier computation.
 
 
 
