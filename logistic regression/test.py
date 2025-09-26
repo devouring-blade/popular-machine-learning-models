@@ -5,9 +5,9 @@ from sklearn.metrics import classification_report
 from sklearn.preprocessing import StandardScaler
 
 if __name__ == '__main__':
-    data = load_breast_cancer(as_frame= True)
-    x = data.data
-    y = data.target
+    bread_cancer = load_breast_cancer(as_frame= True)
+    x = bread_cancer.data
+    y = bread_cancer.target
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size= 0.1, shuffle= True, random_state= 0, stratify= y)
 
     scaler = StandardScaler()
