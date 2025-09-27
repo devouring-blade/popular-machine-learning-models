@@ -20,9 +20,9 @@ But its activation function is replaced by a step function.
 In that case, our prediction result will be: y_pred = g(f(x)) = g(w.x + b).
 
 ## update rule
-Similar to linear regression, we take the derivative of the output function to obtain the gradients, and then use them to update the weights and bias.
+The update rule of the perceptron is not the same as logistic regression because its output is a non-differentiable function, which means we cannot take derivatives and therefore cannot apply gradient descent.
 <img width="1415" height="475" alt="{3F82A871-3188-4E24-9EDA-1D9BCF08593A}" src="https://github.com/user-attachments/assets/d5e12213-79b7-4d4a-8d04-d97f11a60072" />
-And if you ask why it is addition instead of subtraction as in linear regression or any other model that uses gradient descent, the answer is that I have changed the sign inside the parentheses in order to provide a clearer explanation of how it works below; so basically, it makes no difference.
+
 
 For example, as in rows 0 and 2, if the prediction result and the actual value are the same, we do not need to update the parameters. On the other hand, in row 1, the result is 1, meaning that the prediction is lower than the actual value, so we need to increase the parameters. Similarly, for row 3, the prediction is higher than the actual value, so we need to decrease the parameters.
 <img width="1382" height="508" alt="{3896D5C8-C857-4F0F-9633-D477FB9FBE15}" src="https://github.com/user-attachments/assets/1f46d238-4bd4-4547-96fd-6796a7037ee6" />
