@@ -28,4 +28,7 @@ For example, as in rows 0 and 2, if the prediction result and the actual value a
 <img width="1382" height="508" alt="{3896D5C8-C857-4F0F-9633-D477FB9FBE15}" src="https://github.com/user-attachments/assets/1f46d238-4bd4-4547-96fd-6796a7037ee6" />
 
 
+# steps
+<img width="1485" height="571" alt="{A1761CE2-21E5-4C47-8D57-E872E4278E53}" src="https://github.com/user-attachments/assets/098b782c-a2a7-462c-806e-dc3fdcecb403" />
+
 
