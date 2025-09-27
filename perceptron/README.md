@@ -10,5 +10,7 @@ When an input is fed in, it can be considered as a signal. After going through t
 it is a single layer neural network with the unit step function as an activation function.
 <img width="1223" height="374" alt="{974A56B4-28D0-4235-8950-EFC399D8923D}" src="https://github.com/user-attachments/assets/0c502922-2f0b-4d7e-8bed-90df27813caa" />
 
+It is similar to linear regression because both use a linear function.
+<img width="1453" height="188" alt="{217B192A-D579-4D19-B497-3A68AE11FCD8}" src="https://github.com/user-attachments/assets/6e5aebbb-3b1e-490c-b6cb-a1ddcf07306c" />
 
 
