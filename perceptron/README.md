@@ -20,7 +20,7 @@ But its activation function is replaced by a step function.
 In that case, our prediction result will be: y_pred = g(f(x)) = g(w.x + b).
 
 ## update rule
-The update rule of the perceptron is not the same as logistic regression because its output is a non-differentiable function, which means we cannot take derivatives and therefore cannot apply gradient descent.
+The update rule of the perceptron is different from logistic regression because its output is a non-differentiable function, which means we cannot compute derivatives and thus cannot use gradient descent. Instead, we apply a discrete update rule.
 <img width="1415" height="475" alt="{3F82A871-3188-4E24-9EDA-1D9BCF08593A}" src="https://github.com/user-attachments/assets/d5e12213-79b7-4d4a-8d04-d97f11a60072" />
 
 
