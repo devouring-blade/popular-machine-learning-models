@@ -19,4 +19,8 @@ But its activation function is replaced by a step function.
 
 In that case, our prediction result will be: y_pred = g(f(x)) = g(w.x + b).
 
+## update rule
+
+<img width="1415" height="475" alt="{3F82A871-3188-4E24-9EDA-1D9BCF08593A}" src="https://github.com/user-attachments/assets/d5e12213-79b7-4d4a-8d04-d97f11a60072" />
+
 
