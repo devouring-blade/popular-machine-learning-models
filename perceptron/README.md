@@ -20,7 +20,8 @@ But its activation function is replaced by a step function.
 In that case, our prediction result will be: y_pred = g(f(x)) = g(w.x + b).
 
 ## update rule
-
+Similar to linear regression, we take the derivative of the output function to obtain the gradients, and then use them to update the weights and bias.
 <img width="1415" height="475" alt="{3F82A871-3188-4E24-9EDA-1D9BCF08593A}" src="https://github.com/user-attachments/assets/d5e12213-79b7-4d4a-8d04-d97f11a60072" />
+And if you ask why it is addition instead of subtraction as in linear regression or any other model that uses gradient descent, the answer is that I have changed the sign inside the parentheses, so basically it makes no difference.
 
 
