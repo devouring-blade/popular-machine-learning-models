@@ -4,7 +4,7 @@ def activation_func(x):
     return np.where(x >= 0, 1, 0)
 
 class Perceptron:
-    def __init__(self, lr, n_iters):
+    def __init__(self, lr= 0.01, n_iters= 1000):
         self.lr = lr
         self.n_iters = n_iters
         self.weights = None
@@ -17,10 +17,10 @@ class Perceptron:
         self.bias = np.random.random()
 
         for _ in range(self.n_iters):
-            for sample in x:
-                prediction = activation_func(self.weights.T @ x + self.bias)
-                self.weights += self.lr * (y - prediction) * x
-                self.bias += self.lr * (y - prediction)
+            for features, ground_truth in zip(x, y):
+                prediction = activation_func(self.weights.T @ features + self.bias)
+                self.weights += self.lr * (ground_truth - prediction) * features
+                self.bias += self.lr * (ground_truth - prediction)
 
     def predict(self, x):
         predictions = activation_func(x @ self.weights + self.bias)
