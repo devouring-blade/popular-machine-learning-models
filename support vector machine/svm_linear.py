@@ -15,7 +15,7 @@ class svm:
         self.weights = np.random.random(n_features)
         self.bias = np.random.random()
 
-        y = np.where(x <= 0, -1, 1)
+        y = np.where(y <= 0, -1, 1)
 
         for _ in range(self.n_iters):
             for idx, sample in enumerate(x):
