@@ -7,3 +7,8 @@ for Support Vector Machine Linear: use a linear model and try to find a decision
 # loss function and regulization
 “We use Hinge Loss because, in a binary classification problem with two labels 1 and -1, as explained above, if the label is -1, the prediction must lie on or beyond the negative margin (𝑤.𝑥 + 𝑏 = −1); conversely, if the label is 1, the prediction must lie on or beyond the positive margin (𝑤.𝑥 + 𝑏 = 1). In this case, we always have 𝑦_true.𝑦_pred ≥ 1. If the model predicts correctly, then 𝑦_true.𝑦_pred ≥ 1, which makes 1 − 𝑦_true.𝑦_pred < 0, and thus the loss is 0. On the other hand, if the model predicts a label that lies within the two margins—or worse, predicts the wrong label—then 𝑦_true.𝑦_pred < 1, which makes 1 −𝑦_true.𝑦_pred > 0. That is how the Hinge Loss function works.
 <img width="1381" height="554" alt="{325B2D79-29D0-4200-B132-5A61617CE47A}" src="https://github.com/user-attachments/assets/fbac7ca0-4ced-41b2-a18a-a49adeef643a" />
+
+
+As mentioned, SVM is special because it also uses the support vectors, so we need a hyperplane with the best separation (the largest margin). Since the distance between the two margins is 2 / |w|, minimizing |w| as much as possible will give us (1/2) * (w2). This formula may look complicated, but in fact it makes it easier to take derivatives to update the parameters.
+<img width="1399" height="551" alt="{FEC9C763-F1A5-4D62-B83A-26DDDA1CD005}" src="https://github.com/user-attachments/assets/a46c1f12-2224-41bf-ad9d-28c13541a857" />
+
