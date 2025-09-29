@@ -1,7 +1,6 @@
 import numpy as np
 
-
-class svm:
+class SVM_Classification:
     def __init__(self, lr= 0.001, lambda_param= 0.01, n_iters= 1000):
         self.lr = lr
         self.lambda_param= lambda_param
