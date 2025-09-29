@@ -4,6 +4,7 @@ during an iterative optimization process.
 ### procedure
 - update cluster labels: assign points to the nearest cluster center (centroid)
 - update cluster centers: set center to the mean of each cluster
+Initially, we randomly initialize k centroids from the original data points. We then use the Euclidean distance formula to calculate the distance between the data points and assign each point to the cluster of the nearest centroid. After that, we update the coordinates of the centroids by taking the mean of all the samples in each cluster. This process is repeated continuously until no data point changes its cluster anymore, or until the maximum number of iterations is reached.
 
 <img width="1202" height="800" alt="Figure_-1" src="https://github.com/user-attachments/assets/fde41ee7-d174-485d-821b-9e9bf5cd4baa" />
 
