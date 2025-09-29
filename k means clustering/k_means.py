@@ -2,7 +2,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-class K_means:
+
+class K_Means:
     def __init__(self, k= 5, max_iters= 500, plot_steps= False):
         self.k = k
         self.max_iters = max_iters
@@ -85,23 +86,6 @@ class K_means:
 
         plt.show()
 
-# Testing
-if __name__ == "__main__":
-    np.random.seed(42)
-    from sklearn.datasets import make_blobs
-
-    x, y = make_blobs(
-        centers=3, n_samples=500, n_features=2, shuffle=True, random_state=40
-    )
-    print(x.shape)
-
-    clusters = len(np.unique(y))
-    print(clusters)
-
-    k = K_means(k=clusters, max_iters=150, plot_steps=True)
-    y_pred = k.predict(x)
-
-    k.plot(x)
 
 
 
