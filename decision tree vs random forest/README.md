@@ -5,7 +5,9 @@ A Decision Tree is a supervised learning model used for classification or regres
 - Each branch from a node represents the outcome of that decision.
 - The splitting process continues until a stopping condition is met (for example, maximum depth, minimum number of samples, or when all samples in a group have the same label).
 - The leaf nodes of the tree contain the predicted value or class label.
-![Uploading {9AB95A10-641E-4FC5-89CF-CBA0C7C13886}.png…]()
+  
+<img width="623" height="681" alt="{9AB95A10-641E-4FC5-89CF-CBA0C7C13886}" src="https://github.com/user-attachments/assets/05c45237-0730-4de0-a964-057050b73470" />
+
 
 
 
