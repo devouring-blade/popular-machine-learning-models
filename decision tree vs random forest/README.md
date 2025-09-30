@@ -13,3 +13,15 @@ The problem is which attribute to choose for splitting, and for that attribute, 
 
 <img width="1230" height="276" alt="{F5671ED6-A5DD-4F97-8A59-A9D1D1CF9020}" src="https://github.com/user-attachments/assets/5904be97-dbe0-44f1-ad38-f66be9cf15eb" />
 
+In addition, to avoid overfitting or when the dataset is very large, the branches may split excessively. We need to decide when to stop splitting. Normally, a node becomes a leaf when the entropy of the samples in it is 0 (all samples belong to the same class), in which case it produces its prediction. However, sometimes the tree splits very deeply but the entropy still does not reach 0, so it must make a decision based on the majority class of the samples in that node.
+
+# steps
+
+<img width="1462" height="451" alt="{FC11772B-CB18-4C20-A400-132018886594}" src="https://github.com/user-attachments/assets/2e265ff5-de15-4073-bb95-e301d88d9e56" />
+
+<img width="1438" height="345" alt="{0DE56F8F-2A56-47C4-9180-FB34D20D01E1}" src="https://github.com/user-attachments/assets/47a8c4e1-8e09-474d-8a0f-b7c722808327" />
+
+
+
+
+
